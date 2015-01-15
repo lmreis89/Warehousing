@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app id="web-app_1" xmlns="http://java.sun.com/xml/ns/j2ee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+	version="2.4">
+	<display-name>ROLAP Client</display-name>
+	<distributable />
+	
+	<servlet>
+		<display-name>StringLOVServlet</display-name>
+		<servlet-name>StringLOVServlet</servlet-name>
+		<servlet-class>web.StringLOVServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>StringLOVServlet</servlet-name>
+		<url-pattern>/StringLOVServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<display-name>DimTreeServlet</display-name>
+		<servlet-name>DimTreeServlet</servlet-name>
+		<servlet-class>web.DimTreeServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>DimTreeServlet</servlet-name>
+		<url-pattern>/DimTreeServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<display-name>MeasuresServlet</display-name>
+		<servlet-name>MeasuresServlet</servlet-name>
+		<servlet-class>web.MeasuresServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>MeasuresServlet</servlet-name>
+		<url-pattern>/MeasuresServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<display-name>StartServlet</display-name>
+		<servlet-name>StartServlet</servlet-name>
+		<servlet-class>web.StartServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>StartServlet</servlet-name>
+		<url-pattern>/StartServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<display-name>InputChooserServlet</display-name>
+		<servlet-name>InputChooserServlet</servlet-name>
+		<servlet-class>web.InputChooserServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>InputChooserServlet</servlet-name>
+		<url-pattern>/InputChooserServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<display-name>DimensionSessionServlet</display-name>
+		<servlet-name>DimensionSessionServlet</servlet-name>
+		<servlet-class>web.DimensionSessionServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>DimensionSessionServlet</servlet-name>
+		<url-pattern>/DimensionSessionServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<display-name>SliceServlet</display-name>
+		<servlet-name>SliceServlet</servlet-name>
+		<servlet-class>web.SliceServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>SliceServlet</servlet-name>
+		<url-pattern>/SliceServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<display-name>FactSessionServlet</display-name>
+		<servlet-name>FactSessionServlet</servlet-name>
+		<servlet-class>web.FactSessionServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>FactSessionServlet</servlet-name>
+		<url-pattern>/FactSessionServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<display-name>FilterServlet</display-name>
+		<servlet-name>FilterServlet</servlet-name>
+		<servlet-class>web.FilterServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>FilterServlet</servlet-name>
+		<url-pattern>/FilterServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<display-name>FactServlet</display-name>
+		<servlet-name>FactServlet</servlet-name>
+		<servlet-class>web.FactServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>FactServlet</servlet-name>
+		<url-pattern>/FactServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<display-name>QueryServlet</display-name>
+		<servlet-name>QueryServlet</servlet-name>
+		<servlet-class>web.QueryServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>QueryServlet</servlet-name>
+		<url-pattern>/QueryServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<display-name>BooleanServlet</display-name>
+		<servlet-name>BooleanServlet</servlet-name>
+		<servlet-class>web.BooleanServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>BooleanServlet</servlet-name>
+		<url-pattern>/BooleanServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<display-name>DrillServlet</display-name>
+		<servlet-name>DrillServlet</servlet-name>
+		<servlet-class>web.DrillServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>DrillServlet</servlet-name>
+		<url-pattern>/DrillServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<display-name>DrillUpServlet</display-name>
+		<servlet-name>DrillUpServlet</servlet-name>
+		<servlet-class>web.DrillUpServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>DrillUpServlet</servlet-name>
+		<url-pattern>/DrillUpServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<display-name>DrillDownServlet</display-name>
+		<servlet-name>DrillDownServlet</servlet-name>
+		<servlet-class>web.DrillDownServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>DrillDownServlet</servlet-name>
+		<url-pattern>/DrillDownServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<display-name>ReportServlet</display-name>
+		<servlet-name>ReportServlet</servlet-name>
+		<servlet-class>web.ReportServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ReportServlet</servlet-name>
+		<url-pattern>/ReportServlet</url-pattern>
+	</servlet-mapping>
+
+
+	<welcome-file-list>
+		<welcome-file>HelloWorld.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>

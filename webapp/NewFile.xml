@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<query>
+	<cube>
+		<cubeID>T1</cubeID>
+		<selectedFacts>
+			<fact factID="F1">
+				<aggr_operation>sum</aggr_operation>
+				<filterAfter>
+					<op>less</op>
+					<value>20.00</value>
+				</filterAfter>
+			</fact>
+			<fact factID="F3">
+				<aggr_operation>sum</aggr_operation>
+			</fact>
+		</selectedFacts>
+	</cube>
+	<dimensions>
+		<dimension dimID="D5">
+			<selectedCollumns>
+				<selectedCollumn>L81</selectedCollumn>
+				<selectedCollumn>L83</selectedCollumn>
+				<selectedCollumn>L82</selectedCollumn>
+				<selectedCollumn>L84</selectedCollumn>
+				<selectedCollumn>L46</selectedCollumn>
+			</selectedCollumns>
+			<slice>
+				<sliceCollumns>
+					<collumn id="L81">
+						<byValues>
+							<value>Acapulco</value>
+							<value>Albany</value>
+							<value>Beaverton</value>
+							<value>Bellflower</value>
+							<value>Altadena</value>
+							<value>Ballard</value>
+							<value>Beverly Hills</value>
+							<value>Bellingham</value>
+							<value>Berkeley</value>
+							<value>Anacortes</value>
+							<value>Arcadia</value>
+						</byValues>
+					</collumn>
+					<collumn id="L84">
+						<byValues>
+							<value>USA</value>
+						</byValues>
+					</collumn>
+				</sliceCollumns>
+			</slice>
+		</dimension>
+		<dimension dimID="D4">
+			<selectedCollumns>
+				<selectedCollumn>L77</selectedCollumn>
+			</selectedCollumns>
+		</dimension>
+	</dimensions>
+</query>
